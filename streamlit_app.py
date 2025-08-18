@@ -7,7 +7,6 @@ from statistics import mode, StatisticsError
 import re
 import tempfile
 import os
-import openai
 
 from io import BytesIO
 from openpyxl import load_workbook
