@@ -69,7 +69,7 @@ if uploaded_file:
         match = re.search(r"(\d+)", str(x))
         return int(match.group(1)) if match else None
 
-       df_raw[subject_columns] = df_raw[subject_columns].map(extract_numeric)
+    df_raw[subject_columns] = df_raw[subject_columns].map(extract_numeric)
 
     # Long formato rinkinys
     df_long = df_raw.melt(
